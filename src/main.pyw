@@ -17,17 +17,17 @@ file_raw = open(os.path.join(base_raw, 'source\\raw.csv'))
 raw_data = pd.read_csv(file_raw)
 
 
-# Exporting data to .csv file #
-# def export():
-#     keys = ['Object Name', 'Value']  
-#     for i,j in zip(keys,results):
-#         data[i] = j
+ Exporting data to .csv file #
+ def export():
+     keys = ['Object Name', 'Value']  
+     for i,j in zip(keys,results):
+         data[i] = j
     
-#     df = pd.DataFrame(data, columns = keys)
-#     base_data = os.path.dirname(os.path.abspath(__file__))    
-#     file_data = os.path.join(base_data, 'source\\data.csv')
-#     df.to_csv(file_data, index=False)
-#     print(df, "\n")
+     df = pd.DataFrame(data, columns = keys)
+     base_data = os.path.dirname(os.path.abspath(__file__))    
+     file_data = os.path.join(base_data, 'source\\data.csv')
+     df.to_csv(file_data, index=False)
+     print(df, "\n")
 
 # Main Function #
 def main():
@@ -48,7 +48,7 @@ def main():
                     continue
                 
         results.extend((obj_name, obj_values))
-        # export()
+        export()
         time.sleep(interval)
         obj_name.clear(); obj_values.clear(); results.clear()
         
