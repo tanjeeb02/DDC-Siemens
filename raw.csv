@@ -1,0 +1,10 @@
+Device Name,Point Type,Engineering Units,BACnet Object type,BACnet Object Instance,BACnet Object Name,BACnet Device Instance,IP Address
+DDC-BTEST01-01,LAI,,analogInput,8,B01-IRR1,7001,192.168.1.11
+DDC-BTEST01-01,LAI,degrees_celsius,analogInput,2,B01-TEMP1,7001,192.168.1.11
+DDC-BTEST01-01,LAI,degrees_celsius,analogInput,9,B01-SHWTEMP1,7001,192.168.1.11
+DDC-BTEST01-01,LAI,degrees_celsius,analogInput,10,B01-SHWTEMP2,7001,192.168.1.11
+DDC-BTEST01-01,LAI,kWh,analogValue,1,B01-kWh,7001,192.168.1.11
+DDC-BTEST01-02,LAI,,analogInput,1,B02-RH1,7002,192.168.1.12
+DDC-BTEST01-02,LAI,degrees_celsius,analogInput,0,B02-TEMP1,7002,192.168.1.12
+CDNIS-ART-IRR,LAI,,analogValue,10004,!CDNIS-ART-IRR:BATT2,7220,192.168.1.220
+CDNIS-ART-IRR,LAI,,analogValue,10012,!CDNIS-ART-IRR:MEMFRAG,7220,192.168.1.220
