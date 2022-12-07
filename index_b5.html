@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}" />
+  <meta http-equiv="refresh" content="">
+  <script type="text/javascript" src="/static/css/jquery.min.js"></script>
+  <script>
+    function cycleDivs() {
+      var divs = $("#footer span"),
+        now = divs.filter(":visible"),
+        next = now.next().length ? now.next() : divs.first(),
+        speed = 500;
+
+      now.fadeOut(speed);
+      next.fadeIn(speed);
+    }
+
+    $(function () {
+      setInterval(cycleDivs, 5000);
+    });
+
+    function cycleBoxes() {
+      var divs = $("#box_1 div"),
+        now = divs.filter(":visible"),
+        next = now.next().length ? now.next() : divs.first(),
+        speed = 500;
+
+      now.fadeOut(speed);
+      next.fadeIn(speed);
+    }
+
+    $(function () {
+      setInterval(cycleBoxes, 10000);
+    });
+    
+    function cycleMedia() {
+      var media = $(".display span"),
+        now = media.filter(":visible"),
+        next = now.next().length ? now.next() : media.first(),
+        speed = 250;
+
+      now.fadeOut(speed);
+      next.fadeIn(speed);
+    }
+
+    $(function () {
+      setInterval(cycleMedia, 90000);
+    });
+    
+    function cycleTable() {
+      var media = $(".in_table section"),
+        now = media.filter(":visible"),
+        next = now.next().length ? now.next() : media.first(),
+        speed = 250;
+
+      now.fadeOut(speed);
+      next.fadeIn(speed);
+    }
+
+    $(function () {
+      setInterval(cycleTable, 33375);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="body">
+      <div class="text" id="sidebar">
+        <div class="seg" id="box_1">
+          <div>能源監控系統<br />Energy Monitoring<br />System</div>
+          <div id="img_1"><img src="/static/css/hkha logo.jpg" /></div>
+        </div>
+        <div class="seg">蛺蝶樓<br />Gaap Tip House</div>
+        <div class="seg" id="time" style="font-size: 125%;">
+          <script type="text/javascript">
+            function refreshTime() {
+              var today = new Date();
+              var day = today.getDay();
+              var daylist = ["星期日", "週一", "週二", "週三", "週四", "星期五", "週六"];
+              var date = (today.getMonth() + 1) + '月' + today.getDate() + '日';
+              var time = (("0" + today.getHours()).slice(-2)) + ":" + (("0" + today.getMinutes()).slice(-2));
+              document.getElementById("time").innerHTML = date + '<br>' + daylist[day] + '<br>' + time;
+            }
+            setInterval(refreshTime, 1000)
+          </script>
+        </div>
+      </div>
+      <div class="display">
+        <span class="table">
+          <div class="in_table">
+            <section class="sec" id="t_1">
+              <div class="text header" id="h_1">表格 1<br />Table 1</div>
+              <div class="data" id="d_1">
+                <div class="left">
+                  <div class="rows">太陽輻照度<br />Solar Irradiance</div>
+                  <div class="rows">室外溫度<br />Ambient Temperature</div>
+                  <div class="rows">瞬時功率輸出<br />Instantaneous Power Output</div>
+                  <div class="rows">累積生產能量<br />Accumulative Generated Energy</div>
+                  <div class="rows">二氧化碳減排量<br />CO2 Reduction</div>
+                </div>
+                <div class="center">
+                  <div class="rows" id="B01-IRR1">10</div>
+                  <div class="rows" id="B01-TEMP1">20</div>
+                  <div class="rows" id="B01-SHWTEMP1">29.5</div>
+                  <div class="rows" id="B01-SHWTEMP2">30.8</div>
+                  <div class="rows" id="B01-kWh">11.7</div>
+                </div>
+                <div class="right">
+                  <div class="rows">W/m2</div>
+                  <div class="rows">℃</div>
+                  <div class="rows">W</div>
+                  <div class="rows">kWh</div>
+                  <div class="rows">kg</div>
+                </div>
+              </div>
+            </section>
+            <section class="sec" id="t_2">
+              <div class="text header" id="h_2">表 2<br />Table 2</div>
+              <div class="data" id="d_2">
+                <div class="left">
+                  <div class="rows">太陽輻照度<br />Solar Irradiance</div>
+                  <div class="rows">室外溫度<br />Ambient Temperature</div>
+                  <div class="rows">瞬時功率輸出<br />Instantaneous Power Output</div>
+                  <div class="rows">累積生產能量<br />Accumulative Generated Energy</div>
+                  <div class="rows">二氧化碳減排量<br />CO2 Reduction</div>
+                </div>
+                <div class="center">
+                  <div class="rows" id="B01-IRR1">10</div>
+                  <div class="rows" id="B01-TEMP1">20</div>
+                  <div class="rows" id="B01-SHWTEMP1">29.5</div>
+                  <div class="rows" id="B01-SHWTEMP2">30.8</div>
+                  <div class="rows" id="B01-kWh">11.7</div>
+                </div>
+                <div class="right">
+                  <div class="rows">W/m2</div>
+                  <div class="rows">℃</div>
+                  <div class="rows">W</div>
+                  <div class="rows">kWh</div>
+                  <div class="rows">kg</div>
+                </div>
+              </div>
+            </section>
+            <section class="sec" id="t_3">
+              <div class="text header" id="h_3">表 3<br />Table 3</div>
+              <div class="data" id="d_3">
+                <div class="left">
+                  <div class="rows">太陽輻照度<br />Solar Irradiance</div>
+                  <div class="rows">室外溫度<br />Ambient Temperature</div>
+                  <div class="rows">瞬時功率輸出<br />Instantaneous Power Output</div>
+                  <div class="rows">累積生產能量<br />Accumulative Generated Energy</div>
+                  <div class="rows">二氧化碳減排量<br />CO2 Reduction</div>
+                </div>
+                <div class="center">
+                  <div class="rows" id="B01-IRR1">10</div>
+                  <div class="rows" id="B01-TEMP1">20</div>
+                  <div class="rows" id="B01-SHWTEMP1">29.5</div>
+                  <div class="rows" id="B01-SHWTEMP2">30.8</div>
+                  <div class="rows" id="B01-kWh">11.7</div>
+                </div>
+                <div class="right">
+                  <div class="rows">W/m2</div>
+                  <div class="rows">℃</div>
+                  <div class="rows">W</div>
+                  <div class="rows">kWh</div>
+                  <div class="rows">kg</div>
+                </div>
+              </div>
+            </section>
+            <section class="sec" id="t_4">
+              <div class="text header" id="h_4">表 4<br />Table 4</div>
+              <div class="data" id="d_4">
+                <div class="left">
+                  <div class="rows">太陽輻照度<br />Solar Irradiance</div>
+                  <div class="rows">室外溫度<br />Ambient Temperature</div>
+                  <div class="rows">瞬時功率輸出<br />Instantaneous Power Output</div>
+                  <div class="rows">累積生產能量<br />Accumulative Generated Energy</div>
+                  <div class="rows">二氧化碳減排量<br />CO2 Reduction</div>
+                </div>
+                <div class="center">
+                  <div class="rows" id="B01-IRR1">10</div>
+                  <div class="rows" id="B01-TEMP1">20</div>
+                  <div class="rows" id="B01-SHWTEMP1">29.5</div>
+                  <div class="rows" id="B01-SHWTEMP2">30.8</div>
+                  <div class="rows" id="B01-kWh">11.7</div>
+                </div>
+                <div class="right">
+                  <div class="rows">W/m2</div>
+                  <div class="rows">℃</div>
+                  <div class="rows">W</div>
+                  <div class="rows">kWh</div>
+                  <div class="rows">kg</div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </span>
+        <span class="video">
+          <video class="vid" autoplay muted loop>
+            <source src="/static/css/VTS.mp4" type="video/mp4" />
+          </video>
+        </span>
+      </div>
+    </div>
+    <div class="text" id="footer">
+      <span>Fu Tip Estate</span>
+      <span>富蝶邨</span>
+      <!-- <span>Hong Kong Housing Authority</span>
+      <span>香港房屋委員會</span> -->
+    </div>
+  </div>
+</body>
+</html>
