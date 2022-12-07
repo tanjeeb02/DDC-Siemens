@@ -1,0 +1,242 @@
+html,
+body {
+    text-align: center;
+    width: 99%;
+    height: 99%;
+    background: white;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    color: white;
+    background: white;
+    display: table-cell;
+    vertical-align: middle;
+    border-top-style: solid;
+    border-width: thick;
+}
+
+#main {
+    background: black;
+    height: 100%;
+    width: 100%;
+}
+
+#body {
+    background: white;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    padding-bottom: 0.25%;
+}
+
+.text {
+    font-size: 300%;
+}
+
+#sidebar {
+    background: white;
+    height: 99%;
+    width: 25%;
+    float: left;
+    padding-right: 0.265%;
+}
+
+.seg {
+    background: black;
+    width: 100%;
+    height: 33.3%;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box_1 div {
+    display: none;
+    position: absolute;
+}
+
+#box_1 div:first-child {
+    display: block;
+}
+
+#box_1>div {
+    width: auto;
+    height: auto;
+}
+
+#img_1>img {
+    width: 95%;
+    height: auto;
+}
+
+.display {
+    background: white;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display span {
+    display: none;
+    position: absolute;
+}
+
+.display span:first-child {
+    display: block;
+}
+
+.display>span {
+    width: 73%;
+    height: 88%;
+}
+
+.video {
+    height: 100%;
+    width: 100%;
+}
+
+.vid {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.table {
+    height: 99%;
+    width: 99%;
+}
+
+.in_table {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    height: 20%;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data {
+    height: 72.5%;
+    width: 95%;
+    color: black;
+    display: flex;
+    text-align: left;
+    padding: 2.5% 2.5%;
+    font-size: 250%;
+}
+
+#h_1 {
+    background-color: lightslategrey;
+}
+
+#d_1 {
+    background-color: lightgray;
+}
+
+#h_2 {
+    background-color: lightblue;
+}
+
+#d_2 {
+    background-color: lightcyan;
+}
+
+#h_3 {
+    background-color: rgba(255, 173, 173, 0.925);
+}
+
+#d_3 {
+    background-color: rgb(255, 200, 209);
+}
+
+#h_4 {
+    background-color: rgb(202, 127, 202);
+}
+
+#d_4 {
+    background-color: rgb(229, 188, 229);
+}
+
+.left {
+    height: 100%;
+    width: 70%;
+}
+
+.center {
+    height: 100%;
+    width: 20%;
+}
+
+.right {
+    height: 100%;
+    width: 10%;
+}
+
+.rows {
+    height: 20%;
+    width: 100%;
+}
+
+.in_table section {
+    display: none;
+    position: absolute;
+}
+
+.in_table section:first-child {
+    display: block;
+}
+
+.in_table>section {
+    width: 100%;
+    height: 100%;
+}
+
+#footer {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer span {
+    display: none;
+    position: absolute;
+}
+
+#footer span:first-child {
+    display: block;
+}
+
+#footer>span {
+    width: auto;
+    height: auto;
+}
